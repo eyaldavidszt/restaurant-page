@@ -1,0 +1,1 @@
+A restaurant informational page! Done to learn about webpack and module bundling mainly.
