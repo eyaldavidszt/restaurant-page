@@ -91,6 +91,8 @@ hr {
     transform: translate(-50%, -90%);
     color: grey;
     opacity: 0.75;
+    font-family: Montserrat;
+    font-size: 0.8rem;
 }
 
 a {
@@ -149,9 +151,18 @@ a:-webkit-any-link, a:any-link {
 
 .bottom-row-address {
     padding: 8px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 ::selection {
     background-color: rgba(143, 143, 143, 0.8);
 }
+
+/* .scrolled-box-one {
+}
+
+.scrolled-box-img-wrapper {
+}
+
+.scrolled-box-text {
+} */
