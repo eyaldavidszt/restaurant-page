@@ -103,3 +103,55 @@ a:-webkit-any-link, a:any-link {
     font-family: inherit;
     color: white;
 }
+
+.sidebar {
+    position: fixed;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.1s;
+    transition: opacity 0.3s;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .top-row {
+        display: flex;
+        justify-content: end;
+        padding: 0px 1rem;
+    }
+    .close-button {
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    
+}
+
+.active-sidebar {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: -150px;
+}
+.sidebar-content-item {
+    font-family: inherit;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-row-address {
+    padding: 8px;
+    font-size: 1.1rem;
+}
+
+::selection {
+    background-color: rgba(143, 143, 143, 0.8);
+}
