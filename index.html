@@ -11,6 +11,25 @@
         <div id="content">
             <!--main entry page-->
             <div class="container">
+                <div class="sidebar">
+                    <div class="top-row">
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="sidebar-content">
+                        <button class="sidebar-content-item">
+                            Home
+                        </button>
+                        <button class="sidebar-content-item">
+                            Menu
+                        </button>
+                        <button class="sidebar-content-item">
+                            Info and hours
+                        </button>
+                    </div>
+                    <div class="bottom-row-address">
+                        Giano Nox, Since 1989
+                    </div>
+                </div>
                 <img src="../src/cafe-bg.jpg" alt="cafe background" class="bg-image">
                 <div class="sticky-nav">
                     <button type="button" class="menu">
@@ -31,8 +50,18 @@
                 <img src="../src/expand-arrow.png" alt="expand arrow" class="arrow-down">
             </div>
         </div>
-
         <!--info page-->
 
 </body>
+    <script defer>
+        const sidebarBtn = document.querySelector('.menu');
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active-sidebar');
+        }
+        sidebarBtn.addEventListener('click', toggleSidebar);
+
+        const closeBtn = document.querySelector('.close-button');
+        closeBtn.addEventListener('click', toggleSidebar);
+    </script>
 </html>
