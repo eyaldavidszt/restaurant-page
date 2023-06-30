@@ -1,18 +1,22 @@
-// import {pageLoad} from "./pageLoad";
+import {pageLoad} from "./pageLoad";
+import { bottomPageLoad } from "./bottomPageLoad";
 
 
-// const content = document.querySelector('#content');
+const content = document.querySelector('#content');
 
-// const container = pageLoad();
+const container = pageLoad();
 
-// content.appendChild(container);
+content.appendChild(container);
 
-//^^ works!
-
-
+// ^^ works!
 
 
+const [bottomPage, footer] = bottomPageLoad();
 
 
 
-// content.appendChild(underContainer);
+content.appendChild(bottomPage);
+
+content.appendChild(footer);
+
+//now: tab switching logic.
