@@ -102,6 +102,7 @@ hr {
 
 a {
     text-decoration: none;
+    
 }
 
 a:-webkit-any-link, a:any-link {
@@ -244,5 +245,5 @@ a:-webkit-any-link, a:any-link {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }

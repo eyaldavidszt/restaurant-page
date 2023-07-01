@@ -160,7 +160,7 @@ bigInfoBtn.innerHTML = 'INFO';
 const footer = document.createElement('div');
 footer.classList.add('footer');
 
-footer.innerHTML = 'card picture credits&nbsp;:&nbsp;';
+footer.innerHTML = 'card picture credits:&nbsp;';
 
 const creditOne = document.createElement('a');
 creditOne.href = 'https://unsplash.com/it/@everhooder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText';

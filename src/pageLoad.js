@@ -35,6 +35,7 @@ function pageLoad() {
     
     const sidebarContentItemTwo = document.createElement('button');
     sidebarContentItemTwo.classList.add('sidebar-content-item');
+    sidebarContentItemTwo.classList.add('first-menu-btn');
     sidebarContentItemTwo.textContent = 'Menu';
     
     const sidebarContentItemThree = document.createElement('button');
