@@ -70,7 +70,7 @@ function loadMenu() {
 
 
   const menuImg = document.createElement('img');
-  menuImg.src = '../src/menu.svg';
+  menuImg.src = menuImgNew;
   menuImg.alt = 'menu';
   menuButton.appendChild(menuImg);
 
