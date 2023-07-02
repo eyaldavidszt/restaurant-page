@@ -42,7 +42,7 @@ function loadInfo() {
 
 
     const hours = document.createElement('div');
-    hours.classList.add('hours');
+    hours.classList.add('section');
     const hoursTitle = document.createElement('div');
     hoursTitle.classList.add('hours-title');
     hours.appendChild(hoursTitle);
@@ -50,8 +50,39 @@ function loadInfo() {
     infoWrapper.appendChild(hours);
 
     const monThu = document.createElement('div');
+    monThu.innerHTML = 'Mon - Thu: 8AM - 8PM';
+    monThu.classList.add('days');
+    hours.appendChild(monThu);
+    monThu.appendChild(document.createElement('br'));
+    monThu.innerHTML += 'Fri - Sun: 8AM - 3PM';
 
     content.appendChild(infoWrapper);
+
+    const address = document.createElement('div');
+    address.classList.add('section');
+    const addressTitle  = document.createElement('div');
+    addressTitle.classList.add('hours-title');
+    address.appendChild(addressTitle);
+    addressTitle.innerHTML = 'Location';
+    infoWrapper.appendChild(address);
+    const addressBody = document.createElement('div');
+    addressBody.classList.add('days');
+    address.appendChild(addressBody);
+    addressBody.innerHTML += 'P. Sherman 42, Wallaby Way';
+    addressBody.appendChild(document.createElement('br'));
+    addressBody.innerHTML += 'Directions: ';
+    addressBody.appendChild(document.createElement('br'));
+    addressBody.innerHTML += '1. Start at the Cityville Central Station.';
+    addressBody.appendChild(document.createElement('br'));
+    addressBody.innerHTML += '2. Make some turns';
+    addressBody.appendChild(document.createElement('br'));
+    addressBody.innerHTML += '3. ???';
+    addressBody.appendChild(document.createElement('br'));
+    addressBody.innerHTML += '4. Yeah!';
+
+
+
+    
 
 }
 
