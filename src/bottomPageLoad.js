@@ -6,10 +6,13 @@ import foodImg3 from './food3.jpg';
 import infoImg from './info1.jpg';
 import infoImg2 from './info2.jpg';
 import infoImg3 from './info3.jpg';
+import { loadInfo } from './loadInfo';
+import { loadMenu } from './loadMenu';
 
 function bottomPageLoad() {
 
-    
+    const content = document.querySelector('#content');
+  
     
     const homePageScrolled = document.createElement('div');
     homePageScrolled.classList.add('home-page-scrolled');
@@ -44,6 +47,7 @@ function bottomPageLoad() {
     const bigMenuBtn = document.createElement('button');
     bigMenuBtn.classList.add('bigMenuBtn');
     bigMenuBtn.textContent ='MENU';
+    bigMenuBtn.addEventListener('click', loadMenu);
     
     scrolledBoxText.appendChild(bigMenuBtn);
     
@@ -155,6 +159,8 @@ const bigInfoBtn = document.createElement('button');
 scrolledboxTextTwo.appendChild(bigInfoBtn);
 bigInfoBtn.classList.add('bigMenuBtn');
 bigInfoBtn.innerHTML = 'INFO';
+bigInfoBtn.addEventListener('click', loadInfo);
+
 
 
 const footer = document.createElement('div');
@@ -195,7 +201,8 @@ creditSix.innerHTML = 'Mihai Moisa';
 
 footer.appendChild(creditSix);
 footer.innerHTML += '&nbsp:)';
-    return [homePageScrolled, footer];
+content.appendChild(homePageScrolled);
+content.appendChild(footer);
 }
 
 export { bottomPageLoad };

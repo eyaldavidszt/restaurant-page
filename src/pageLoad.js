@@ -1,7 +1,9 @@
 import './style.css';
+import './sidebarstyle.css';
 import menuImg from './menu.svg';
 import bgImg from './cafe-bg.jpg';
 import expandImg from './expand-arrow.png';
+import { makeSidebar } from './sidebarMaker';
 
 function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
@@ -9,50 +11,13 @@ function toggleSidebar() {
 }
 
 function pageLoad() {
-
+    const content = document.querySelector('#content');
+    content.replaceChildren();
+  
     const container = document.createElement('div');
     container.classList.add('container');
-    
-    const sidebar = document.createElement('div');
-    sidebar.classList.add('sidebar');
-    
-    const sidebarTop = document.createElement('div');
-    sidebarTop.classList.add('top-row');
-    
-        const closeBtn = document.createElement('button');
-        closeBtn.classList.add('close-button');
-        closeBtn.innerHTML = '&times;';
-        closeBtn.addEventListener('click', toggleSidebar);
 
-    sidebarTop.appendChild(closeBtn);
-    
-    const sidebarContent = document.createElement('div');
-    sidebarContent.classList.add('sidebar-content');
-    
-    const sidebarContentItem = document.createElement('button');
-    sidebarContentItem.classList.add('sidebar-content-item');
-    sidebarContentItem.textContent = 'Home';
-    
-    const sidebarContentItemTwo = document.createElement('button');
-    sidebarContentItemTwo.classList.add('sidebar-content-item');
-    sidebarContentItemTwo.classList.add('first-menu-btn');
-    sidebarContentItemTwo.textContent = 'Menu';
-    
-    const sidebarContentItemThree = document.createElement('button');
-    sidebarContentItemThree.classList.add('sidebar-content-item');
-    sidebarContentItemThree.textContent = 'Info and hours';
-    
-    sidebarContent.appendChild(sidebarContentItem);
-    sidebarContent.appendChild(sidebarContentItemTwo);
-    sidebarContent.appendChild(sidebarContentItemThree);
-
-    const sidebarBot = document.createElement('div');
-    sidebarBot.classList.add('bottom-row-address');
-    sidebarBot.textContent = 'Giano Nox, since 1989';
-    
-    sidebar.appendChild(sidebarTop);
-    sidebar.appendChild(sidebarContent);
-    sidebar.appendChild(sidebarBot);
+    const sidebar = makeSidebar();
     
     container.appendChild(sidebar);
     
@@ -115,7 +80,8 @@ downArrow.alt = 'expand arrow';
 downArrow.src = expandImg;
 container.appendChild(downArrow);
 
-return container;
+content.appendChild(container);
+
 }
 
 

@@ -1,0 +1,42 @@
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgb(25,25,25);
+    /* background: radial-gradient(circle, rgba(80,80,80,1) 0%, rgba(37,37,37,1) 100%); */
+    height: 100svh;
+    color: white;
+}
+
+.menu {
+    all: initial;
+    cursor: pointer;
+    
+    > img {
+        width: 50px;
+    }
+    width: fit-content;
+
+}
+
+.title-row {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+
+.info-title {
+    align-self: center;
+    justify-self: center;
+    font-size: 3rem;
+}
+
+.hours {
+    width: 60%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hours-title {
+    font-size: 2rem;
+}
