@@ -1,6 +1,7 @@
 A restaurant informational page! Done to learn about webpack and module bundling mainly.
 
-The code ended up being really messy, due to me not understanding webpack well before starting.
+The code ended up being really messy, due to me not understanding webpack well before starting
+, and also trying to force myself to make every page using *just* JS.
 Design ended up a bit compromised as a result, but still overall happy with how it came out:) 
 
 
