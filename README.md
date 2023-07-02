@@ -1,5 +1,9 @@
 A restaurant informational page! Done to learn about webpack and module bundling mainly.
 
+The code ended up being really messy, due to me not understanding webpack well before starting.
+Design ended up a bit compromised as a result, but still overall happy with how it came out:) 
+
+
 Photo by <a href="https://unsplash.com/@kalljet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Katarzyna Grabowska</a> on <a href="https://unsplash.com/photos/dvdPiqndrdU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 Photo by <a href="https://unsplash.com/it/@everhooder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ål nik</a> on <a href="https://unsplash.com/photos/K0mrkZiTbfQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
